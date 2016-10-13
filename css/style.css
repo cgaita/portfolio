@@ -1,0 +1,190 @@
+html {
+	background-color: #423C41;
+}
+/*boreder*/
+#top, #bottom, #left, #right {
+	background: #b9ac9c;
+	position: fixed;
+}
+#left, #right {
+	top: 0; bottom: 0;
+	width: 15px;
+}
+#left { left: 0; 
+}
+#right { right: 0; 
+}		
+#top, #bottom {
+	left: 0; right: 0;
+	height: 15px;
+}
+#top { top: 0; 
+}
+#bottom { bottom: 0; 
+}
+/* style for main page*/
+.contact_info{
+	float: left;
+	color: #b9ac9c;
+	padding-top: 22px;
+	padding-left: 10%;
+	font-size: 2rem;
+}
+#myBtn{
+	width: 172px;
+	border: 0px;
+	float: right;
+	color: #b9ac9c;
+	padding-top: 22px;
+	padding-right: 0px;
+	margin-right: 10%;
+	font-size: 2rem;
+	font-family: 'Cormorant Garamond', serif;
+	background-color: transparent;
+}
+#myBtn:focus{
+	outline: none;
+}
+/*start of copy*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #282427!important;
+    margin: 7% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.icons{
+	 background-color: #282427!important; 
+	 font-size: 30px;
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*end of copy*/
+/*.projects-button:hover{
+	color: white;
+	text-decoration: none;
+}*/
+#content{
+	padding-top: 60px;
+}
+.pineapple{
+	text-align: center;
+	display: block;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	margin-left: 599px;
+	margin-right: 490px;
+}
+div{
+	text-align: center;
+	background-color: #423C41;
+	color: white;
+	margin: auto;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 2rem;
+}
+p{
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 2.5rem;
+	color:  #b9ac9c;
+}
+p.hello{
+	width: 300px;
+	margin: auto;
+	text-align: center;
+}
+p.lastname{
+	font-size: 8em;
+	line-height: 140px;
+	width: 500px;
+	margin: auto;
+	text-align: center;
+}
+p.job{
+	width: 300px;
+	margin: auto;
+	text-align: center;
+}
+.about{
+	padding: 40px;
+	padding-bottom: 1px;
+	width: 750px;
+}
+p.follow{
+	text-align: right;
+	padding-right: 133px;
+	margin-bottom: 0px;
+}
+.socials{
+	text-align: right;
+	font-size: 3rem;
+    padding: 0px;
+    margin-right: 112px;
+}
+.socials li{
+	display: inline-block;
+	text-align: center;
+	padding: 0px;
+	margin-right: 10px;
+}
+.fa-linkedin{
+	color: white;
+}
+.fa-github{
+	color: white;
+}
+.fa-codepen{
+	color: white;
+}
+
+/* style for projects page*/
+
+/*.pineapple2{
+	float: left;
+	padding-top: 20px;
+	padding-left: 20px; 
+}
+.title{
+	color: #b9ac9c;
+	width: 500px;
+	margin: auto;
+	text-align: center;
+	padding: 65px 0 17px;
+}*/
+img#slideshow{
+	text-align: center;
+}
+table{
+	text-align: center !important;
+	margin: auto;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Cormorant+Garamond' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<title>Caroline Gaita's Portfolio</title>
+</head>
+<body>
+	<div id="home-page">
+		<div id="header">
+			<p class="contact_info"> Contact Me <br>gaitacaroline@gmail.com</p>
+			<!--p class="projects-button">View My Projects</p-->
+<!--start-->
+
+		<!-- Trigger/Open The Modal -->
+			<button id="myBtn">Veiw Projects</button>
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+			  <!-- Modal content -->
+				<div class="modal-content">
+					<span class="close">x</span>
+				  	<img src="images/about_me.png" id=slideshow>
+				  	<div class="icons">
+				  		<i class="fa fa-github" aria-hidden="true"></i>
+				  		<i class="fa fa-desktop" aria-hidden="true"></i>
+				  	</div>
+					<table>
+						<tr class="nav">
+							<td align="left"><a href="javascript:change_image(-1)">Previous</a></td>
+							<td align="rigt"><a href="javascript:change_image(1)">Next</a></td>
+							<td id="play_stop" align="rigt"><a href="javascript:play()">Play</a></td>
+						</tr>
+					</table>
+				  </div>
+			</div>
+<!--end of trial-->
+		</div>
+		<div id="content">
+			<div><img class="pineapple" src="images/Pineapple.png"></div>
+			<p class="hello">Hello, I'm Caroline</p>
+			<p class="lastname">GAITA</p>
+			<p class="job">A Frontend Web Developer</p>
+			<div class="about">I am a West Virginia University alumna with a B.A. in Psychology. A year after graduation I decided I wanted a new challenge. I began my journey to becoming a Frontend Web Developer through Thinkful. My plans do not stop at just learning frontend development but extends to learning backend development as well. Currently located outside of Washington DC I plan to move to Austin in the coming months ahead.
+			</div>
+		</div>
+		<div id="footer">
+			<p class="follow">Follow Me</p>
+			<ul class="socials">
+				<li><a href="https://www.linkedin.com/in/carolinegaita" target=_new><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li><a href="https://github.com/cgaita" target=_new><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				<li><a href="http://codepen.io/cgaita/" target=_new><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- <div id="projects-page">
+		<img class="pineapple2" src="Pineapple.png">
+		<p id="go-home"> Home </p>
+		<h2 class="title">Project Library</h2>
+		<img src="images/about_me.png" id=slideshow>
+		<table>
+			<tr class="nav">
+				<td align="left"><a href="javascript:change_image(-1)">Previous</a></td>
+				<td id="play_stop" align="right"><a href="javascript:play()">Play</a></td>
+				<td align="right"><a href="javascript:change_image(1)">Next</a></td>
+			</tr>
+		</table>
+	</div> -->
+		<div id="left"></div>
+		<div id="right"></div>
+		<div id="top"></div>
+		<div id="bottom"></div>
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
