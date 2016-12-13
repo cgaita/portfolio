@@ -1,0 +1,27 @@
+{
+	"name": "Caroline Gaita", 
+	"data": [
+		{"id": 1, "title": "About Me", "image": "/img/about_me.png", "url": "http://codepen.io/cgaita/full/oLEAzY/", "giturl": "giturl"}, 
+		{"id": 2, "title": "Karma Landing Page", "image": "/img/karma.png", "url": "https://cgaita.github.io/startup-landing-page-clone/", "giturl": "https://github.com/cgaita/startup-landing-page-clone"},
+		{"id": 3, "title": "Street fighter", "image": "/img/street_fighter.png", "url": "https://cgaita.github.io/jquery-streetfighter/", "giturl": "https://github.com/cgaita/jquery-streetfighter"},
+		{"id": 4, "title": "Shopping List", "image": "/img/shopping_list.png", "url": "https://cgaita.github.io/shopping-list/", "giturl": "https://github.com/cgaita/shopping-list"},
+		{"id": 5, "title": "Hot or Cold", "image": "/img/hot_cold.png", "url": "https://cgaita.github.io/hot-or-cold-starter/", "giturl": "https://github.com/cgaita/hot-or-cold-starter"},
+		{"id": 6, "title": "Quiz", "image": "/img/quiz.png", "url": "https://cgaita.github.io/quiz/", "giturl": "https://github.com/cgaita/quiz/tree/master"},
+		{"id": 7, "title": "Stack Overflow", "image": "/img/stackoverflow.png", "url": "https://cgaita.github.io/stackoverflow/", "giturl": "https://github.com/cgaita/stackoverflow"},
+		{"id": 8, "title": "Logos", "image": "/img/logos.png", "url": "https://cgaita.github.io/logos/", "giturl": "https://github.com/cgaita/logos"},
+		{"id": 9, "title": "Instagram", "image": "/img/instagram.png", "url": "https://cgaita.github.io/instagram/", "giturl": "https://github.com/cgaita/instagram"},
+	],
+	"socials": {
+		"linkedin": "https://www.linkedin.com/in/carolinegaita",
+		"github": "https://github.com/cgaita",
+		"codepen": "http://codepen.io/cgaita/"
+	},
+	"content": {
+		"text": "Follow Me",
+		"intro": "Hello, I'm Caroline",
+		"job": "A Frontend Web Developer",
+		"bio": "I am a West Virginia University alumna with a B.A. in Psychology. A year after graduation I decided I wanted new challenge. I began my journey to becoming a Frontend Web Developer through Thinkful. My plans do not stop at just learning frontend development but extends to learning backend development as well. Currently located outside of Washington DC I plan to move to Boston in the coming months ahead."
+	}
+}
+
+

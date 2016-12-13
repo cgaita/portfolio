@@ -23,21 +23,22 @@ html {
 #bottom { bottom: 0; 
 }
 /* style for main page*/
+.right, .left{
+	float:left;
+	width:50%;
+}
 .contact_info{
-	float: left;
 	color: #b9ac9c;
 	padding-top: 22px;
-	padding-left: 10%;
+
 	font-size: 2rem;
 }
 #myBtn{
 	width: 172px;
 	border: 0px;
-	float: right;
 	color: #b9ac9c;
 	padding-top: 22px;
-	padding-right: 0px;
-	margin-right: 10%;
+
 	font-size: 2rem;
 	font-family: 'Cormorant Garamond', serif;
 	background-color: transparent;
@@ -45,7 +46,9 @@ html {
 #myBtn:focus{
 	outline: none;
 }
-/*start of copy*/
+#myBtn:hover{
+	color: white;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -62,20 +65,14 @@ html {
 /* Modal Content/Box */
 .modal-content {
     background-color: #282427!important;
-    margin: 7% auto; /* 15% from the top and centered */
+    margin: 7% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; 
 }
-.icons{
-	 background-color: #282427!important; 
-	 font-size: 30px;
-}
-
-
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: black;
     float: right;
     font-size: 40px;
     font-weight: bold;
@@ -83,28 +80,27 @@ html {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: grey;
     text-decoration: none;
     cursor: pointer;
 }
 
-
-/*end of copy*/
-/*.projects-button:hover{
-	color: white;
-	text-decoration: none;
-}*/
-#content{
-	padding-top: 60px;
+.content{
+	/*padding-top: 60px;*/
+	display: block;
+	width :100%;
+}
+.content:before, .content:after{
+	content:' ';
+	display: block;
+}
+.content:after{
+	clear:both;
 }
 .pineapple{
-	text-align: center;
-	display: block;
-	padding-top: 2px;
-	padding-bottom: 5px;
-	margin-left: 599px;
-	margin-right: 490px;
+
 }
+
 div{
 	text-align: center;
 	background-color: #423C41;
@@ -137,6 +133,7 @@ p.job{
 }
 .about{
 	padding: 40px;
+	padding-top: 10px;
 	padding-bottom: 1px;
 	width: 750px;
 }
@@ -166,25 +163,33 @@ p.follow{
 .fa-codepen{
 	color: white;
 }
-
-/* style for projects page*/
-
-/*.pineapple2{
-	float: left;
-	padding-top: 20px;
-	padding-left: 20px; 
+.fa-desktop{
+	color: white;
 }
-.title{
-	color: #b9ac9c;
-	width: 500px;
-	margin: auto;
-	text-align: center;
-	padding: 65px 0 17px;
-}*/
+.fa-desktop:before{
+	margin-left: 20px;
+}
+
 img#slideshow{
 	text-align: center;
 }
 table{
 	text-align: center !important;
 	margin: auto;
+}
+.icons{
+	 background-color: #282427!important; 
+	 font-size: 30px;
+}
+ul{
+	list-style: none;
+	text-align: center;
+	padding-left: 0px;
+}
+li{
+	display: inline-block;
+
+}
+@media (){
+	
 }
