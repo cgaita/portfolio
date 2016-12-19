@@ -9,7 +9,7 @@
 		{"id": 6, "title": "Quiz", "image": "/img/quiz.png", "url": "https://cgaita.github.io/quiz/", "giturl": "https://github.com/cgaita/quiz/tree/master"},
 		{"id": 7, "title": "Stack Overflow", "image": "/img/stackoverflow.png", "url": "https://cgaita.github.io/stackoverflow/", "giturl": "https://github.com/cgaita/stackoverflow"},
 		{"id": 8, "title": "Logos", "image": "/img/logos.png", "url": "https://cgaita.github.io/logos/", "giturl": "https://github.com/cgaita/logos"},
-		{"id": 9, "title": "Instagram", "image": "/img/instagram.png", "url": "https://cgaita.github.io/instagram/", "giturl": "https://github.com/cgaita/instagram"},
+		{"id": 9, "title": "Instagram", "image": "/img/instagram.png", "url": "https://cgaita.github.io/instagram/", "giturl": "https://github.com/cgaita/instagram"}
 	],
 	"socials": {
 		"linkedin": "https://www.linkedin.com/in/carolinegaita",

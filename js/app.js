@@ -1,17 +1,45 @@
 $(document).ready(function(){
-	// var data = getInfoFromJson(function(response){
-	// console.log(response);
-	// })
-	console.log("hello");
-	$.get('/js/data.json', function(response){
-		console.log('enter' ,response);
-	}).done(function(response){
-		console.log(response);
+	var projects
+	var data = getInfoFromJson()
+	.then(function(res){
+		console.log(data)
+		projects = assambleProjects(res.data);
+		console.log(projects)
 	})
 });
-function getInfoFromJson(cb){
-	return $.getJSON('/js/data.json', cb);
+
+function assambleProjects(data){
+	var projectArrayNew = []
+	data.forEach(function(project){
+		projectArrayNew.push(new ProjectNew(project))
+	})
+	return projectArrayNew;
 }
+function ProjectNew(project){
+	this.image = project.image;
+	this.url = project.url;
+	this.giturl = project.url;
+}
+function getInfoFromJson(){
+	return $.get('/data.json');
+}
+
+
+// $(document).ready(function(){
+// 	var data = getInfoFromJson(function(response){
+// 	console.log(response);
+// 	})
+// 	console.log("hello");
+// 	$.get('/js/data.json', function(response){
+// 		console.log('enter' ,response);
+// 	}).done(function(response){
+// 		console.log(response);
+// 	})
+// });
+// function getInfoFromJson(cb){
+// 	return $.getJSON('/js/data.json', cb);
+// }
+
 //slideshow
  var Projects = function(image, url, gitUrl){
 	this.image=image;
