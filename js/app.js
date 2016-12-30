@@ -37,6 +37,7 @@ function startSlideshow(projectArray){
 		$('.icons > ul').html(gitLink);
 	}
 	function change_image(num){
+		console.log("whatever");
 		image_number = image_number + num;
 		if (image_number > image_length){
 			image_number =0;
@@ -51,13 +52,14 @@ function startSlideshow(projectArray){
 	}
 	change_image(image_number);
 	function play(){
-
-		document.getElementById("play_stop").innerHTML = '<a href="javascript:stop()">Stop</a>';
+		document.getElementById("play_stop").innerHTML = '<a class="stopSlideShow" href="javascript:stop()">Stop</a>';
 		Interval = setInterval(change_image(1), 3000);
+		console.log(Interval);
 	}
 	function stop(){
-		document.getElementById("play_stop").innerHTML = '<a href="javascript:play()">Play</a>';
+		document.getElementById("play_stop").innerHTML = '<a href="javascript:play()">play</a>';
 		clearInterval(Interval);
+		console.log("whatever");
 	}
 	// Get the modal
 	var modal = document.getElementById('myModal');
@@ -84,4 +86,17 @@ function startSlideshow(projectArray){
 	        modal.style.display = "none";
 	    }
 }
+	$('.prev').on('click', function(e){
+		change_image(-1)
+	})
+
+	$('.next').on('click', function(e){
+		change_image(1)
+	})
+	$('#play_stop').on('click', function(e){
+		play();
+	})
+	$('.stopSlideShow').on('click', function(e){
+		stop();
+	})
 }
