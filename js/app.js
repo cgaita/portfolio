@@ -2,13 +2,13 @@ $(document).ready(function(){
 	var projects
 	var data = getInfoFromJson()
 	.then(function(res){
-		console.log(data)
+		// console.log(data)
 		projects = assambleProjects(res.data);
 		startSlideshow(projects);
-		console.log(projects)
+		// console.log(projects)
+		var Interval
 	})
 });
-
 function assambleProjects(data){
 	var projectArrayNew = []
 	data.forEach(function(project){
@@ -22,10 +22,11 @@ function ProjectNew(project){
 	this.giturl = project.url;
 }
 function getInfoFromJson(){
-	return $.get('/data.json');
+	return $.get('../data.json');
 }
 function startSlideshow(projectArray){
-	var image_number =0;
+	console.log(projectArray)
+	var image_number = 0;
 	var image_length = projectArray.length - 1;
 	var Interval;
 
@@ -36,8 +37,8 @@ function startSlideshow(projectArray){
 		var gitLink ="<li><a href=\"" + currentGitLink + "\" target=_new><i class='fa fa-github' aria-hidden='true'></i></a></li><li><a href=\"" + currentLink + "\" target=_new><i class='fa fa-desktop' aria-hidden='true'></i></a></li>";
 		$('.icons > ul').html(gitLink);
 	}
+
 	function change_image(num){
-		console.log("whatever");
 		image_number = image_number + num;
 		if (image_number > image_length){
 			image_number =0;
@@ -50,17 +51,19 @@ function startSlideshow(projectArray){
 		}).fadeIn('slow');
 		setLinks(image_number);
 	}
+
 	change_image(image_number);
-	function play(){
-		document.getElementById("play_stop").innerHTML = '<a class="stopSlideShow" href="javascript:stop()">Stop</a>';
-		Interval = setInterval(change_image(1), 3000);
-		console.log(Interval);
-	}
-	function stop(){
-		document.getElementById("play_stop").innerHTML = '<a href="javascript:play()">play</a>';
-		clearInterval(Interval);
-		console.log("whatever");
-	}
+
+	// function play(){
+	// 	document.getElementById("play_stop").innerHTML = '<a class="stopSlideShow" href="#">Stop</a>';
+	// 	Interval = setInterval(change_image(1), 3000);
+	// 	return Interval
+	// }
+	// function stop(Interval){
+	// 	$(".stopSlideShow").innerHTML = '<a href="#">play</a>';
+	// 	clearInterval(Interval);
+	// 	console.log("whatevers");
+	// }
 	// Get the modal
 	var modal = document.getElementById('myModal');
 
@@ -89,14 +92,21 @@ function startSlideshow(projectArray){
 	$('.prev').on('click', function(e){
 		change_image(-1)
 	})
-
 	$('.next').on('click', function(e){
 		change_image(1)
 	})
-	$('#play_stop').on('click', function(e){
-		play();
-	})
-	$('.stopSlideShow').on('click', function(e){
-		stop();
-	})
+	// $(document).on('click', '#play_stop', function (e){
+	// 	Interval = play();
+	// })
+	// $(document).on('click', '.stopSlideShow', function (e){
+		
+	// })
+	// $('#play_stop').on('click', function(e){
+	// 	play();
+	// })
+	// $('.stopSlideShow').on('click', function(e){
+	// 	console.log("this" + e);
+	// 	stop();
+	// })
 }
+

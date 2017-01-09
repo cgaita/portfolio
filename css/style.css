@@ -1,6 +1,8 @@
+
 html {
 	background-color: #423C41;
 }
+
 /*boreder*/
 #top, #bottom, #left, #right {
 	background: #b9ac9c;
@@ -28,17 +30,21 @@ html {
 	width:50%;
 }
 .contact_info{
-	color: #b9ac9c;
 	padding-top: 22px;
-
 	font-size: 2rem;
+}
+.link{
+	color: #b9ac9c;
+}
+.link:hover{
+	color: white;
+	text-decoration: none;
 }
 #myBtn{
 	width: 172px;
 	border: 0px;
 	color: #b9ac9c;
 	padding-top: 22px;
-
 	font-size: 2rem;
 	font-family: 'Cormorant Garamond', serif;
 	background-color: transparent;
@@ -84,9 +90,10 @@ html {
     text-decoration: none;
     cursor: pointer;
 }
-
+#header{
+	padding-top: .5%;
+}
 .content{
-	/*padding-top: 60px;*/
 	display: block;
 	width :100%;
 }
@@ -97,10 +104,6 @@ html {
 .content:after{
 	clear:both;
 }
-.pineapple{
-
-}
-
 div{
 	text-align: center;
 	background-color: #423C41;
@@ -122,7 +125,7 @@ p.hello{
 p.lastname{
 	font-size: 8em;
 	line-height: 140px;
-	width: 500px;
+	/*width: 500px;*/
 	margin: auto;
 	text-align: center;
 }
@@ -139,19 +142,23 @@ p.job{
 }
 p.follow{
 	text-align: right;
-	padding-right: 133px;
+	padding-right: 21%;
+/*	padding-right: 133px;*/
 	margin-bottom: 0px;
+	padding-top: 2%;
 }
 .socials{
 	text-align: right;
 	font-size: 3rem;
     padding: 0px;
-    margin-right: 112px;
+    margin-right: 19.5%;
+   /* margin-right: 112px;*/
 }
 .socials li{
 	display: inline-block;
 	text-align: center;
 	padding: 0px;
+	padding-bottom: 1.5%;
 	margin-right: 10px;
 }
 .fa-linkedin{
@@ -190,6 +197,68 @@ li{
 	display: inline-block;
 
 }
-@media (){
-	
+@media only screen and (max-width: 667px){
+
+	#top, #bottom, #left, #right {
+	display: none;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 0px;
+	}
+	#left { left: 0; 
+	}
+	#right { right: 0; 
+	}		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 0px;
+	}
+	#top { top: 0; 
+	}
+	#bottom { bottom: 0; 
+	}
+	#myBtn{
+		font-size: 20px;
+		/*width: 230px;*/
+	}
+	.contact_info{
+		font-size: 20px;
+	}
+	div{
+		font-size:23px;
+		text-align: center;
+	}
+	p.lastname{
+		font-size: 80px;
+		line-height: 100px;
+	}
+	p.hello{
+		font-size: 30px;
+		text-align: center;
+
+	}
+	.about{
+		padding-top: 20px;
+		width: 100%;
+		text-align: center;
+	}
+	p.job{
+		font-size: 30px;
+		width: 100%;
+	}
+	p.follow{
+		font-size: 35px;
+		text-align: center;
+		padding-right: 0px;
+		padding-top: 15px;
+	}
+	.socials{
+		text-align: center;
+		margin-right: 0px;
+		font-size: 50px;
+	}
+	.socials li{
+		padding:0 30px;
+	}
 }
